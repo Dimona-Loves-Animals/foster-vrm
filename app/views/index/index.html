@@ -1,0 +1,224 @@
+<%inherit file="/_site.html"/>
+<%block name="title">My Title</%block>
+<%block name="head">
+    % if config['PRODUCTION']:
+	<link rel="stylesheet" type="text/css" href="/static/css/index.min.css" />
+	<script src="/static/js/index.min.js" type="text/javascript"></script>
+    % else:
+	<link rel="stylesheet/less" type="text/css" href="/static/index/index.less" />
+	<script src="/static/index/index.js" type="text/javascript"></script>
+    % endif
+    ${parent.head()}
+</%block>
+<div>
+<label>Name:</label>
+    <h1>Hello!</h1>
+    <p class="lead">
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Foster animal</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="yourname">Your name</label>  
+  <div class="col-md-4">
+  <input id="yourname" name="yourname" type="text" placeholder="What is your name" class="form-control input-md" required="">
+  <span class="help-block">In most cases, that</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="youraddress">Your address</label>  
+  <div class="col-md-4">
+  <input id="youraddress" name="youraddress" type="text" placeholder="Your home address" class="form-control input-md" required="">
+  <span class="help-block">Full address where you'll foster</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="yourphone">Phone number</label>  
+  <div class="col-md-4">
+  <input id="yourphone" name="yourphone" type="text" placeholder="0x-xxxxxxx" class="form-control input-md" required="">
+  <span class="help-block">Please supply phone number where we will contact you on</span>  
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="youremail">Your Email address</label>  
+  <div class="col-md-4">
+  <input id="youremail" name="youremail" type="text" placeholder="yourname@example.com" class="form-control input-md">
+  <span class="help-block">What your email is?</span>  
+  </div>
+</div>
+
+<!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fosterwhat">What you want to foster?</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="fosterwhat-0">
+      <input type="checkbox" name="fosterwhat" id="fosterwhat-0" value="1">
+      Cats
+    </label>
+    <label class="checkbox-inline" for="fosterwhat-1">
+      <input type="checkbox" name="fosterwhat" id="fosterwhat-1" value="2">
+      Dogs
+    </label>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="fosterage">What age you want to foster?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="fosterage-0">
+      <input type="checkbox" name="fosterage" id="fosterage-0" value="1">
+      Puppies
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="fosterage-1">
+      <input type="checkbox" name="fosterage" id="fosterage-1" value="2">
+      Young
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="fosterage-2">
+      <input type="checkbox" name="fosterage" id="fosterage-2" value="3">
+      Mature
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="fosterage-3">
+      <input type="checkbox" name="fosterage" id="fosterage-3" value="4">
+      Old
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">House</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="textarea" name="textarea">Tell us about your home. Do you have any pets in the house? Dogs? Cats? How many? What age? How they're behave?</textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Home">What conditions can you give?</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="Home-0">
+      <input type="checkbox" name="Home" id="Home-0" value="1">
+      Live in the house
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Home-1">
+      <input type="checkbox" name="Home" id="Home-1" value="2">
+      Have garden
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Home-2">
+      <input type="checkbox" name="Home" id="Home-2" value="3">
+      Can pay on food
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Home-3">
+      <input type="checkbox" name="Home" id="Home-3" value="4">
+      Can pay on medicines and treatments
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Home-4">
+      <input type="checkbox" name="Home" id="Home-4" value="5">
+      I can handle behaviour problem (non agressive animals)
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="Home-5">
+      <input type="checkbox" name="Home" id="Home-5" value="6">
+      I can handle aggressive animals
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="moreinfo">More information</label>
+  <div class="col-md-4">                     
+    <textarea class="form-control" id="moreinfo" name="moreinfo">Share with us anything you think worth mentioning</textarea>
+  </div>
+</div>
+
+<!-- Multiple Checkboxes -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="agreement">Agreement</label>
+  <div class="col-md-4">
+  <div class="checkbox">
+    <label for="agreement-0">
+      <input type="checkbox" name="agreement" id="agreement-0" value="1">
+      I know the foster will be without time limit
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="agreement-1">
+      <input type="checkbox" name="agreement" id="agreement-1" value="2">
+      I know I can not give the animal without Dimona Loves Animals agreement
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="agreement-2">
+      <input type="checkbox" name="agreement" id="agreement-2" value="3">
+      I know I must pay for all the animals needs unless payed by Dimona Loves Animals
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="agreement-3">
+      <input type="checkbox" name="agreement" id="agreement-3" value="4">
+      I know I can not end the foster without a week notice to Dimona Loves Animals
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="agreement-4">
+      <input type="checkbox" name="agreement" id="agreement-4" value="5">
+      I know I will need to take the foster to anywhere needed by myself
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="agreement-5">
+      <input type="checkbox" name="agreement" id="agreement-5" value="6">
+      I know I'd need to supply photos of the animals to dimona-loves-animals
+    </label>
+	</div>
+  <div class="checkbox">
+    <label for="agreement-6">
+      <input type="checkbox" name="agreement" id="agreement-6" value="7">
+      I know I need to ride the dog to adopt days as requested
+    </label>
+	</div>
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submitform">Submit</label>
+  <div class="col-md-4">
+    <button id="submitform" name="submitform" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</div>
