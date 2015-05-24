@@ -15,11 +15,9 @@
 
 <!-- Multiple Checkboxes (inline) -->
 <div class="form-group">
-  <label class="control-label" for="fosterwhat">What you would like to foster care?</label>
-  <div>
-    <img src="http://freepngimages.com/wp-content/uploads/2014/04/dog_and_cat_1_2.png">
-  </div>
-  <div class="">
+  <label class="col-md-4 control-label" for="fosterwhat">What you would like to foster care?</label>
+  <img src="http://freepngimages.com/wp-content/uploads/2014/04/dog_and_cat_1_2.png">
+  <div class="col-md-4">
     <label class="checkbox-inline" for="fosterwhat-0">
       <input type="checkbox" name="fosterwhat" id="fosterwhat-0" value="1">
       Cat
@@ -36,13 +34,13 @@
             <section>
 <!-- Textarea -->
 <div class="form-group">
-  <label class="control-label" for="textarea">House</label>
+  <label class="col-md-4 control-label" for="textarea">House</label>
   <textarea class="form-control" id="textarea" name="textarea">Tell us about your home. Do you have any pets in the house? Dogs? Cats? How many? What age? How they're behave?</textarea>
 </div>
 
 <!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="control-label" for="Home">What conditions can you give?</label>
+  <label class="col-md-4 control-label" for="Home">What conditions can you give?</label>
   <div class="checkbox">
     <label for="Home-0">
       <input type="checkbox" name="Home" id="Home-0" value="1">
@@ -87,8 +85,8 @@
             <section>
 <!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="control-label" for="fosterage">What age you want to foster?</label>
-  <div class="">
+  <label class="col-md-4 control-label" for="fosterage">What age you want to foster?</label>
+  <div class="col-md-4">
   <div class="checkbox">
     <label for="fosterage-0">
       <input type="checkbox" name="fosterage" id="fosterage-0" value="1">
@@ -119,8 +117,8 @@
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="control-label" for="moreinfo">More information</label>
-  <div class="">                     
+  <label class="col-md-4 control-label" for="moreinfo">More information</label>
+  <div class="col-md-4">                     
     <textarea class="form-control" id="moreinfo" name="moreinfo">Share with us anything you think worth mentioning</textarea>
   </div>
 </div>
@@ -134,13 +132,13 @@
 		<div class="col-md-6">
 <!-- Text input-->
 <div class="form-group">
-  <label class="control-label" for="yourname">Your name</label>  
+  <label class="col-md-4 control-label" for="yourname">Your name</label>  
   <input id="yourname" name="yourname" type="text" placeholder="What is your name" class="form-control input-md">
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="control-label" for="youraddress">Your address</label>  
+  <label class="col-md-4 control-label" for="youraddress">Your address</label>  
   <input id="youraddress" name="youraddress" type="text" placeholder="Your home address" class="form-control input-md">
   <span class="help-block">Full address where you'll foster</span>  
 </div>
@@ -149,15 +147,14 @@
 		<div class="col-md-6">
 <!-- Text input-->
 <div class="form-group">
-  <label class="control-label" for="yourphone">Phone number</label>  
+  <label class="col-md-4 control-label" for="yourphone">Phone number</label>  
   <input id="yourphone" name="yourphone" type="text" placeholder="0x-xxxxxxx" class="form-control input-md">
   <span class="help-block">Please supply phone number where we will contact you on</span>  
-  <input id="acceptTerms" name="acceptTerms" type="checkbox"> <label for="acceptTerms">You can call me after 22:00 if foster is needed.</label>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="control-label" for="youremail">Your Email address</label>  
+  <label class="col-md-4 control-label" for="youremail">Your Email address</label>  
   <input id="youremail" name="youremail" type="text" placeholder="yourname@example.com" class="form-control input-md">
   <span class="help-block">What your email is?</span>  
 </div>
@@ -168,8 +165,8 @@
 
 <!-- Multiple Checkboxes -->
 <div class="form-group">
-  <label class="control-label" for="agreement">Agreement</label>
-  <div class="">
+  <label class="col-md-4 control-label" for="agreement">Agreement</label>
+  <div class="col-md-4">
   <div class="checkbox">
     <label for="agreement-0">
       <input type="checkbox" name="agreement" id="agreement-0" value="1">
@@ -214,6 +211,15 @@
 	</div>
   </div>
 </div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submitform">Submit</label>
+  <div class="col-md-4">
+    <button id="submitform" name="submitform" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
 
                 <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>
             </section>

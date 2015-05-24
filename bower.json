@@ -1,0 +1,20 @@
+{
+  "name": "foster-vrm",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Dimona-Loves-Animals/foster-vrm",
+  "authors": [
+    "ET-CS <et.programming@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.steps": "~1.1.0",
+    "jquery-validation": "~1.13.1"
+  }
+}
